@@ -12,6 +12,7 @@
 		"commands" : 
 		[
 			"add_library",
+			"target_compile_options",
 			"include_directories"
 		],
 		"files" : 
@@ -26,13 +27,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 40,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 22,
 				"parent" : 0
 			}
 		]
@@ -44,13 +51,37 @@
 			[
 				{
 					"fragment" : "-g -std=gnu++20"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Werror=unused-variable"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Werror=unused-function"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
-					"path" : "/home/cocoa/new_gameserver"
+					"backtrace" : 3,
+					"path" : "/home/jinhoo/new_gameserver"
 				}
 			],
 			"language" : "CXX",

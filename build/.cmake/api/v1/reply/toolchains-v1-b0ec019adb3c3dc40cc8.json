@@ -11,19 +11,19 @@
 					"includeDirectories" : 
 					[
 						"/usr/include/c++/13",
-						"/usr/include/x86_64-linux-gnu/c++/13",
+						"/usr/include/aarch64-linux-gnu/c++/13",
 						"/usr/include/c++/13/backward",
-						"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+						"/usr/lib/gcc/aarch64-linux-gnu/13/include",
 						"/usr/local/include",
-						"/usr/include/x86_64-linux-gnu",
+						"/usr/include/aarch64-linux-gnu",
 						"/usr/include"
 					],
 					"linkDirectories" : 
 					[
-						"/usr/lib/gcc/x86_64-linux-gnu/13",
-						"/usr/lib/x86_64-linux-gnu",
+						"/usr/lib/gcc/aarch64-linux-gnu/13",
+						"/usr/lib/aarch64-linux-gnu",
 						"/usr/lib",
-						"/lib/x86_64-linux-gnu",
+						"/lib/aarch64-linux-gnu",
 						"/lib"
 					],
 					"linkFrameworkDirectories" : [],
@@ -38,7 +38,7 @@
 						"gcc"
 					]
 				},
-				"path" : "/usr/bin/g++",
+				"path" : "/usr/bin/aarch64-linux-gnu-g++",
 				"version" : "13.3.0"
 			},
 			"language" : "CXX",

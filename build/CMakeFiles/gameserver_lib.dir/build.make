@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cocoa/new_gameserver
+CMAKE_SOURCE_DIR = /home/jinhoo/new_gameserver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cocoa/new_gameserver/build
+CMAKE_BINARY_DIR = /home/jinhoo/new_gameserver/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gameserver_lib.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/gameserver_lib.dir/progress.make
 include CMakeFiles/gameserver_lib.dir/flags.make
 
 CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o: CMakeFiles/gameserver_lib.dir/flags.make
-CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o: /home/cocoa/new_gameserver/io/buffer_ring.cpp
+CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o: /home/jinhoo/new_gameserver/io/buffer_ring.cpp
 CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o: CMakeFiles/gameserver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o -MF CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o.d -o CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o -c /home/cocoa/new_gameserver/io/buffer_ring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o -MF CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o.d -o CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o -c /home/jinhoo/new_gameserver/io/buffer_ring.cpp
 
 CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cocoa/new_gameserver/io/buffer_ring.cpp > CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jinhoo/new_gameserver/io/buffer_ring.cpp > CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.i
 
 CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cocoa/new_gameserver/io/buffer_ring.cpp -o CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jinhoo/new_gameserver/io/buffer_ring.cpp -o CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.s
 
 CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o: CMakeFiles/gameserver_lib.dir/flags.make
-CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o: /home/cocoa/new_gameserver/io/io_uring.cpp
+CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o: /home/jinhoo/new_gameserver/io/io_uring.cpp
 CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o: CMakeFiles/gameserver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o -MF CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o.d -o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o -c /home/cocoa/new_gameserver/io/io_uring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o -MF CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o.d -o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o -c /home/jinhoo/new_gameserver/io/io_uring.cpp
 
 CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cocoa/new_gameserver/io/io_uring.cpp > CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jinhoo/new_gameserver/io/io_uring.cpp > CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.i
 
 CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cocoa/new_gameserver/io/io_uring.cpp -o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jinhoo/new_gameserver/io/io_uring.cpp -o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.s
 
 CMakeFiles/gameserver_lib.dir/io/socket.cpp.o: CMakeFiles/gameserver_lib.dir/flags.make
-CMakeFiles/gameserver_lib.dir/io/socket.cpp.o: /home/cocoa/new_gameserver/io/socket.cpp
+CMakeFiles/gameserver_lib.dir/io/socket.cpp.o: /home/jinhoo/new_gameserver/io/socket.cpp
 CMakeFiles/gameserver_lib.dir/io/socket.cpp.o: CMakeFiles/gameserver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gameserver_lib.dir/io/socket.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/io/socket.cpp.o -MF CMakeFiles/gameserver_lib.dir/io/socket.cpp.o.d -o CMakeFiles/gameserver_lib.dir/io/socket.cpp.o -c /home/cocoa/new_gameserver/io/socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gameserver_lib.dir/io/socket.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/io/socket.cpp.o -MF CMakeFiles/gameserver_lib.dir/io/socket.cpp.o.d -o CMakeFiles/gameserver_lib.dir/io/socket.cpp.o -c /home/jinhoo/new_gameserver/io/socket.cpp
 
 CMakeFiles/gameserver_lib.dir/io/socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameserver_lib.dir/io/socket.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cocoa/new_gameserver/io/socket.cpp > CMakeFiles/gameserver_lib.dir/io/socket.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jinhoo/new_gameserver/io/socket.cpp > CMakeFiles/gameserver_lib.dir/io/socket.cpp.i
 
 CMakeFiles/gameserver_lib.dir/io/socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameserver_lib.dir/io/socket.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cocoa/new_gameserver/io/socket.cpp -o CMakeFiles/gameserver_lib.dir/io/socket.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jinhoo/new_gameserver/io/socket.cpp -o CMakeFiles/gameserver_lib.dir/io/socket.cpp.s
 
 CMakeFiles/gameserver_lib.dir/session/session.cpp.o: CMakeFiles/gameserver_lib.dir/flags.make
-CMakeFiles/gameserver_lib.dir/session/session.cpp.o: /home/cocoa/new_gameserver/session/session.cpp
+CMakeFiles/gameserver_lib.dir/session/session.cpp.o: /home/jinhoo/new_gameserver/session/session.cpp
 CMakeFiles/gameserver_lib.dir/session/session.cpp.o: CMakeFiles/gameserver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gameserver_lib.dir/session/session.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/session/session.cpp.o -MF CMakeFiles/gameserver_lib.dir/session/session.cpp.o.d -o CMakeFiles/gameserver_lib.dir/session/session.cpp.o -c /home/cocoa/new_gameserver/session/session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gameserver_lib.dir/session/session.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/session/session.cpp.o -MF CMakeFiles/gameserver_lib.dir/session/session.cpp.o.d -o CMakeFiles/gameserver_lib.dir/session/session.cpp.o -c /home/jinhoo/new_gameserver/session/session.cpp
 
 CMakeFiles/gameserver_lib.dir/session/session.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameserver_lib.dir/session/session.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cocoa/new_gameserver/session/session.cpp > CMakeFiles/gameserver_lib.dir/session/session.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jinhoo/new_gameserver/session/session.cpp > CMakeFiles/gameserver_lib.dir/session/session.cpp.i
 
 CMakeFiles/gameserver_lib.dir/session/session.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameserver_lib.dir/session/session.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cocoa/new_gameserver/session/session.cpp -o CMakeFiles/gameserver_lib.dir/session/session.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jinhoo/new_gameserver/session/session.cpp -o CMakeFiles/gameserver_lib.dir/session/session.cpp.s
 
 CMakeFiles/gameserver_lib.dir/session/service.cpp.o: CMakeFiles/gameserver_lib.dir/flags.make
-CMakeFiles/gameserver_lib.dir/session/service.cpp.o: /home/cocoa/new_gameserver/session/service.cpp
+CMakeFiles/gameserver_lib.dir/session/service.cpp.o: /home/jinhoo/new_gameserver/session/service.cpp
 CMakeFiles/gameserver_lib.dir/session/service.cpp.o: CMakeFiles/gameserver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gameserver_lib.dir/session/service.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/session/service.cpp.o -MF CMakeFiles/gameserver_lib.dir/session/service.cpp.o.d -o CMakeFiles/gameserver_lib.dir/session/service.cpp.o -c /home/cocoa/new_gameserver/session/service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gameserver_lib.dir/session/service.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/session/service.cpp.o -MF CMakeFiles/gameserver_lib.dir/session/service.cpp.o.d -o CMakeFiles/gameserver_lib.dir/session/service.cpp.o -c /home/jinhoo/new_gameserver/session/service.cpp
 
 CMakeFiles/gameserver_lib.dir/session/service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameserver_lib.dir/session/service.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cocoa/new_gameserver/session/service.cpp > CMakeFiles/gameserver_lib.dir/session/service.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jinhoo/new_gameserver/session/service.cpp > CMakeFiles/gameserver_lib.dir/session/service.cpp.i
 
 CMakeFiles/gameserver_lib.dir/session/service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameserver_lib.dir/session/service.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cocoa/new_gameserver/session/service.cpp -o CMakeFiles/gameserver_lib.dir/session/service.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jinhoo/new_gameserver/session/service.cpp -o CMakeFiles/gameserver_lib.dir/session/service.cpp.s
 
 CMakeFiles/gameserver_lib.dir/server/server.cpp.o: CMakeFiles/gameserver_lib.dir/flags.make
-CMakeFiles/gameserver_lib.dir/server/server.cpp.o: /home/cocoa/new_gameserver/server/server.cpp
+CMakeFiles/gameserver_lib.dir/server/server.cpp.o: /home/jinhoo/new_gameserver/server/server.cpp
 CMakeFiles/gameserver_lib.dir/server/server.cpp.o: CMakeFiles/gameserver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gameserver_lib.dir/server/server.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/server/server.cpp.o -MF CMakeFiles/gameserver_lib.dir/server/server.cpp.o.d -o CMakeFiles/gameserver_lib.dir/server/server.cpp.o -c /home/cocoa/new_gameserver/server/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gameserver_lib.dir/server/server.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gameserver_lib.dir/server/server.cpp.o -MF CMakeFiles/gameserver_lib.dir/server/server.cpp.o.d -o CMakeFiles/gameserver_lib.dir/server/server.cpp.o -c /home/jinhoo/new_gameserver/server/server.cpp
 
 CMakeFiles/gameserver_lib.dir/server/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gameserver_lib.dir/server/server.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cocoa/new_gameserver/server/server.cpp > CMakeFiles/gameserver_lib.dir/server/server.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jinhoo/new_gameserver/server/server.cpp > CMakeFiles/gameserver_lib.dir/server/server.cpp.i
 
 CMakeFiles/gameserver_lib.dir/server/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gameserver_lib.dir/server/server.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cocoa/new_gameserver/server/server.cpp -o CMakeFiles/gameserver_lib.dir/server/server.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jinhoo/new_gameserver/server/server.cpp -o CMakeFiles/gameserver_lib.dir/server/server.cpp.s
 
 # Object files for target gameserver_lib
 gameserver_lib_OBJECTS = \
@@ -173,7 +173,7 @@ libgameserver_lib.a: CMakeFiles/gameserver_lib.dir/session/service.cpp.o
 libgameserver_lib.a: CMakeFiles/gameserver_lib.dir/server/server.cpp.o
 libgameserver_lib.a: CMakeFiles/gameserver_lib.dir/build.make
 libgameserver_lib.a: CMakeFiles/gameserver_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cocoa/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libgameserver_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jinhoo/new_gameserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libgameserver_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gameserver_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gameserver_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -186,6 +186,6 @@ CMakeFiles/gameserver_lib.dir/clean:
 .PHONY : CMakeFiles/gameserver_lib.dir/clean
 
 CMakeFiles/gameserver_lib.dir/depend:
-	cd /home/cocoa/new_gameserver/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cocoa/new_gameserver /home/cocoa/new_gameserver /home/cocoa/new_gameserver/build /home/cocoa/new_gameserver/build /home/cocoa/new_gameserver/build/CMakeFiles/gameserver_lib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/jinhoo/new_gameserver/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jinhoo/new_gameserver /home/jinhoo/new_gameserver /home/jinhoo/new_gameserver/build /home/jinhoo/new_gameserver/build /home/jinhoo/new_gameserver/build/CMakeFiles/gameserver_lib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gameserver_lib.dir/depend
 

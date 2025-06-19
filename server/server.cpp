@@ -5,10 +5,11 @@
 #include <coroutine>
 #include <thread>
 #include "../coroutine/include/task.h"
+#include "../session/include/service.h"
 
 namespace co_uring {
 
-void GameWorker::init(const char* host, std::uint16_t port) {
+void Worker::init(const char* host, std::uint16_t port) {
     // Initialize io_uring for this worker thread
     auto& io_uring = IoUring::getInstance();
     if (io_uring.queueInit() != 0) {
@@ -43,7 +44,12 @@ void GameWorker::init(const char* host, std::uint16_t port) {
     spawn(accept_clients());
 }
 
-auto GameWorker::accept_clients() -> simple_task {
+void Worker::run() {
+    auto& io_uring = IoUring::getInstance();
+    io_uring.eventLoop();
+}
+
+auto Worker::accept_clients() -> task<void> {
     if (!socket_server_) {
         co_return;
     }
@@ -56,9 +62,10 @@ auto GameWorker::accept_clients() -> simple_task {
     }
 }
 
-auto GameWorker::handle_client(std::unique_ptr<socket_client> client) -> simple_task {
+auto Worker::handle_client(std::unique_ptr<socket_client> client) -> task<void> {
     try {
-        co_await GameSessionHandler::handle_client(std::move(client));
+        GameSessionHandler handler;
+        co_await handler.handle_client(std::move(client));
     } catch (const std::exception& e) {
         std::cerr << "Error handling client: " << e.what() << std::endl;
     }
@@ -111,12 +118,10 @@ void GameServer::wait_for_shutdown() {
 }
 
 void GameServer::worker_thread_func(const char* host, std::uint16_t port) {
-    GameWorker worker;
+    Worker worker;
     worker.init(host, port);
     
-    // Keep the worker thread alive
-    while (running_.load()) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    }
+    // Run the io_uring event loop
+    worker.run();
 } 
 }

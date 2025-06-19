@@ -13,6 +13,7 @@
 			"add_executable",
 			"install",
 			"target_link_libraries",
+			"target_compile_options",
 			"include_directories"
 		],
 		"files" : 
@@ -27,31 +28,37 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 45,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 52,
+				"line" : 115,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 46,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 15,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 22,
 				"parent" : 0
 			}
 		]
@@ -63,13 +70,37 @@
 			[
 				{
 					"fragment" : "-g -std=gnu++20"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror=unused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror=unused-function"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
-					"path" : "/home/cocoa/new_gameserver"
+					"backtrace" : 6,
+					"path" : "/home/jinhoo/new_gameserver"
 				}
 			],
 			"language" : "CXX",
@@ -133,7 +164,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/liburing.so",
+				"fragment" : "/usr/lib/aarch64-linux-gnu/liburing.so",
 				"role" : "libraries"
 			}
 		],

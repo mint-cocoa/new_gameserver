@@ -2,6 +2,18 @@
 	"entries" : 
 	[
 		{
+			"name" : "CLANG_TIDY_EXE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/clang-tidy"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -55,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cocoa/new_gameserver/build"
+			"value" : "/home/jinhoo/new_gameserver/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -159,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/g++"
+			"value" : "/usr/bin/aarch64-linux-gnu-g++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -283,7 +295,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc"
+			"value" : "/usr/bin/aarch64-linux-gnu-gcc"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -300,6 +312,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/linuxbrew/.linuxbrew/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -431,7 +455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cocoa/new_gameserver/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/jinhoo/new_gameserver/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -491,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cocoa/new_gameserver"
+			"value" : "/home/jinhoo/new_gameserver"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -532,6 +556,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/ld"
+		},
+		{
+			"name" : "CMAKE_LIST_FILE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of CMakeLists files to read"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "CMakeLists.txt"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -1034,6 +1070,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "CPPCHECK_EXE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/cppcheck"
+		},
+		{
 			"name" : "URING_LIB",
 			"properties" : 
 			[
@@ -1043,7 +1091,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/liburing.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/liburing.so"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1067,7 +1115,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cocoa/new_gameserver/build"
+			"value" : "/home/jinhoo/new_gameserver/build"
 		},
 		{
 			"name" : "gameserver_IS_TOP_LEVEL",
@@ -1091,7 +1139,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cocoa/new_gameserver"
+			"value" : "/home/jinhoo/new_gameserver"
 		}
 	],
 	"kind" : "cache",

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-0a2a6034b9dc66ba95c1.json",
+					"jsonFile" : "directory-.-Debug-1caff7e286a4a6295384.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -17,7 +17,9 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3
 					]
 				}
 			],
@@ -33,7 +35,9 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3
 					]
 				}
 			],
@@ -41,15 +45,29 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "clang-tidy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clang-tidy-Debug-efa77ee131b04d47fb40.json",
+					"name" : "clang-tidy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cppcheck::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cppcheck-Debug-71681aa5ee1fbd8aea1a.json",
+					"name" : "cppcheck",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "gameserver::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gameserver-Debug-2755067d7059899f0d09.json",
+					"jsonFile" : "target-gameserver-Debug-4191f3ed8f8625194942.json",
 					"name" : "gameserver",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gameserver_lib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gameserver_lib-Debug-56982a067ad106b1fd34.json",
+					"jsonFile" : "target-gameserver_lib-Debug-a369c788beb79c6184c2.json",
 					"name" : "gameserver_lib",
 					"projectIndex" : 0
 				}
@@ -59,8 +77,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/cocoa/new_gameserver/build",
-		"source" : "/home/cocoa/new_gameserver"
+		"build" : "/home/jinhoo/new_gameserver/build",
+		"source" : "/home/jinhoo/new_gameserver"
 	},
 	"version" : 
 	{

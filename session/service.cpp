@@ -17,6 +17,7 @@ void Service::CloseService() {
     for (auto& session : sessions_) {
         // TODO: Implement proper disconnect method
         std::cout << "Session disconnecting (service closing)" << std::endl;
+        (void)session; // Suppress unused variable warning
     }
     
     sessions_.clear();
@@ -24,11 +25,13 @@ void Service::CloseService() {
 }
 
 void Service::Broadcast(const std::uint8_t* data, std::size_t size) {
+    (void)data; // Suppress unused parameter warning
     std::lock_guard<std::mutex> lock(sessionMutex_);
     
     for (const auto& session : sessions_) {
         // TODO: Implement proper send method
         std::cout << "Broadcasting data to session (size: " << size << ")" << std::endl;
+        (void)session; // Suppress unused variable warning
     }
 }
 
@@ -38,6 +41,7 @@ void Service::Broadcast(const std::vector<std::uint8_t>& data) {
     for (const auto& session : sessions_) {
         // TODO: Implement proper send method
         std::cout << "Broadcasting data to session (size: " << data.size() << ")" << std::endl;
+        (void)session; // Suppress unused variable warning
     }
 }
 

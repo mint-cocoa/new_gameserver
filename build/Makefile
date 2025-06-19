@@ -57,18 +57,18 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cocoa/new_gameserver
+CMAKE_SOURCE_DIR = /home/jinhoo/new_gameserver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cocoa/new_gameserver/build
+CMAKE_BINARY_DIR = /home/jinhoo/new_gameserver/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	/home/linuxbrew/.linuxbrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cocoa/new_gameserver/build/CMakeFiles /home/cocoa/new_gameserver/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinhoo/new_gameserver/build/CMakeFiles /home/jinhoo/new_gameserver/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cocoa/new_gameserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinhoo/new_gameserver/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -186,6 +186,32 @@ gameserver: cmake_check_build_system
 gameserver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gameserver.dir/build.make CMakeFiles/gameserver.dir/build
 .PHONY : gameserver/fast
+
+#=============================================================================
+# Target rules for targets named clang-tidy
+
+# Build rule for target.
+clang-tidy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clang-tidy
+.PHONY : clang-tidy
+
+# fast build rule for target.
+clang-tidy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-tidy.dir/build.make CMakeFiles/clang-tidy.dir/build
+.PHONY : clang-tidy/fast
+
+#=============================================================================
+# Target rules for targets named cppcheck
+
+# Build rule for target.
+cppcheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cppcheck
+.PHONY : cppcheck
+
+# fast build rule for target.
+cppcheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppcheck.dir/build.make CMakeFiles/cppcheck.dir/build
+.PHONY : cppcheck/fast
 
 io/buffer_ring.o: io/buffer_ring.cpp.o
 .PHONY : io/buffer_ring.o
@@ -367,6 +393,8 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... clang-tidy"
+	@echo "... cppcheck"
 	@echo "... gameserver"
 	@echo "... gameserver_lib"
 	@echo "... io/buffer_ring.o"

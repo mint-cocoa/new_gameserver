@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/jinhoo/new_gameserver/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

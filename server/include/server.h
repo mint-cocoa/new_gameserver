@@ -16,6 +16,7 @@ namespace co_uring {
 class Worker {
 public:
     void init(const char* host, std::uint16_t port);
+    void run();
     auto accept_clients() -> task<void>;
     auto handle_client(std::unique_ptr<socket_client> client) -> task<void>;
 
@@ -25,10 +26,19 @@ private:
 
 class GameServer {
 public:
-    auto listen(const char* host, std::uint16_t port) -> void;
+    explicit GameServer(std::size_t worker_count);
+    ~GameServer();
+    
+    bool start(const char* host, std::uint16_t port);
+    void stop();
+    void wait_for_shutdown();
     
 private:
+    void worker_thread_func(const char* host, std::uint16_t port);
+    
+    std::size_t worker_count_;
     std::vector<std::thread> worker_threads_;
+    std::atomic<bool> running_{false};
 };
 
 // Helper template functions
