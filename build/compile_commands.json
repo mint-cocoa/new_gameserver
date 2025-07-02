@@ -1,44 +1,50 @@
 [
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o -c /home/jinhoo/new_gameserver/io/buffer_ring.cpp",
-  "file": "/home/jinhoo/new_gameserver/io/buffer_ring.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o -c /home/cocoa/new_gameserver/io/buffer_ring.cpp",
+  "file": "/home/cocoa/new_gameserver/io/buffer_ring.cpp",
   "output": "CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o"
 },
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o -c /home/jinhoo/new_gameserver/io/io_uring.cpp",
-  "file": "/home/jinhoo/new_gameserver/io/io_uring.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o -c /home/cocoa/new_gameserver/io/io_uring.cpp",
+  "file": "/home/cocoa/new_gameserver/io/io_uring.cpp",
   "output": "CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o"
 },
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver_lib.dir/io/socket.cpp.o -c /home/jinhoo/new_gameserver/io/socket.cpp",
-  "file": "/home/jinhoo/new_gameserver/io/socket.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/io/socket.cpp.o -c /home/cocoa/new_gameserver/io/socket.cpp",
+  "file": "/home/cocoa/new_gameserver/io/socket.cpp",
   "output": "CMakeFiles/gameserver_lib.dir/io/socket.cpp.o"
 },
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver_lib.dir/session/session.cpp.o -c /home/jinhoo/new_gameserver/session/session.cpp",
-  "file": "/home/jinhoo/new_gameserver/session/session.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/io/logger.cpp.o -c /home/cocoa/new_gameserver/io/logger.cpp",
+  "file": "/home/cocoa/new_gameserver/io/logger.cpp",
+  "output": "CMakeFiles/gameserver_lib.dir/io/logger.cpp.o"
+},
+{
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/session/session.cpp.o -c /home/cocoa/new_gameserver/session/session.cpp",
+  "file": "/home/cocoa/new_gameserver/session/session.cpp",
   "output": "CMakeFiles/gameserver_lib.dir/session/session.cpp.o"
 },
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver_lib.dir/session/service.cpp.o -c /home/jinhoo/new_gameserver/session/service.cpp",
-  "file": "/home/jinhoo/new_gameserver/session/service.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/session/service.cpp.o -c /home/cocoa/new_gameserver/session/service.cpp",
+  "file": "/home/cocoa/new_gameserver/session/service.cpp",
   "output": "CMakeFiles/gameserver_lib.dir/session/service.cpp.o"
 },
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver_lib.dir/server/server.cpp.o -c /home/jinhoo/new_gameserver/server/server.cpp",
-  "file": "/home/jinhoo/new_gameserver/server/server.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver_lib.dir/server/server.cpp.o -c /home/cocoa/new_gameserver/server/server.cpp",
+  "file": "/home/cocoa/new_gameserver/server/server.cpp",
   "output": "CMakeFiles/gameserver_lib.dir/server/server.cpp.o"
 },
 {
-  "directory": "/home/jinhoo/new_gameserver/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/jinhoo/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -o CMakeFiles/gameserver.dir/main.cpp.o -c /home/jinhoo/new_gameserver/main.cpp",
-  "file": "/home/jinhoo/new_gameserver/main.cpp",
+  "directory": "/home/cocoa/new_gameserver/build",
+  "command": "/usr/bin/g++  -I/home/cocoa/new_gameserver -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror=return-type -Werror=unused-variable -Werror=unused-function -g -O0 -o CMakeFiles/gameserver.dir/main.cpp.o -c /home/cocoa/new_gameserver/main.cpp",
+  "file": "/home/cocoa/new_gameserver/main.cpp",
   "output": "CMakeFiles/gameserver.dir/main.cpp.o"
 }
 ]

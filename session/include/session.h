@@ -22,11 +22,13 @@ class Service;
 
 class Session : public std::enable_shared_from_this<Session> {
 public:
-    Session();
+    Session(std::unique_ptr<socket_client> socket);
     virtual ~Session();
     
     void SetService(std::shared_ptr<Service> service) { service_ = service; }
     std::shared_ptr<Service> GetService() const { return service_.lock(); }
+
+    task<void> Send(std::vector<std::uint8_t>&& buffer);
     
     virtual void OnConnected() {}
     virtual void OnDisconnected() {}
@@ -55,7 +57,7 @@ private:
 
 class PacketSession : public Session {
 public:
-    PacketSession();
+    using Session::Session;
     virtual ~PacketSession();
 
 protected:
@@ -72,11 +74,11 @@ using SessionFactory = std::function<SessionRef()>;
 // Game server session handler coroutine
 class GameSessionHandler {
 public:
-    static task<void> handle_client(std::unique_ptr<socket_client> client) noexcept;
+    static task<void> handle_client(SessionRef session) noexcept;
 
 private:
-    static task<void> process_session_loop(std::unique_ptr<socket_client> client) noexcept;
-    static void handle_packet(const std::uint8_t* buffer, std::size_t len);
+    static task<void> process_session_loop(SessionRef session) noexcept;
+    static void handle_packet(SessionRef session, const std::uint8_t* buffer, std::size_t len);
 };
 
 class GameSession : public PacketSession {

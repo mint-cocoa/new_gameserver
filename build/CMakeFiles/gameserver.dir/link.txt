@@ -1,1 +1,1 @@
-/usr/bin/aarch64-linux-gnu-g++ -g CMakeFiles/gameserver.dir/main.cpp.o -o gameserver  libgameserver_lib.a -lpthread /usr/lib/aarch64-linux-gnu/liburing.so 
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/gameserver.dir/link.d CMakeFiles/gameserver.dir/main.cpp.o -o gameserver  libgameserver_lib.a -lpthread /usr/lib/liburing.so

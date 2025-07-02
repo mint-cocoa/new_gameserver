@@ -26,11 +26,13 @@ set(IO_SOURCES
     io/buffer_ring.cpp
     io/io_uring.cpp
     io/socket.cpp
+    io/logger.cpp
 )
 
 set(SESSION_SOURCES
     session/session.cpp
     session/service.cpp
+    session/packet_handler.cpp
 )
 
 set(SERVER_SOURCES
@@ -55,6 +57,8 @@ target_compile_options(gameserver_lib PRIVATE
     -Werror=return-type
     -Werror=unused-variable
     -Werror=unused-function
+    -g
+    -O0
 )
 
 # Main game server executable
@@ -69,6 +73,8 @@ target_compile_options(gameserver PRIVATE
     -Werror=return-type
     -Werror=unused-variable
     -Werror=unused-function
+    -g
+    -O0
 )
 
 # clang-tidy target

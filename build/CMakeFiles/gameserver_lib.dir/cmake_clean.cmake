@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o.d"
   "CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o"
   "CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o.d"
+  "CMakeFiles/gameserver_lib.dir/io/logger.cpp.o"
+  "CMakeFiles/gameserver_lib.dir/io/logger.cpp.o.d"
   "CMakeFiles/gameserver_lib.dir/io/socket.cpp.o"
   "CMakeFiles/gameserver_lib.dir/io/socket.cpp.o.d"
   "CMakeFiles/gameserver_lib.dir/server/server.cpp.o"

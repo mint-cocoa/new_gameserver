@@ -12,6 +12,9 @@
 #include <liburing.h>
 #include "../../coroutine/include/task.h"
 #include "io_uring.h"
+#include <expected>
+#include <system_error>
+#include <span>
 
 namespace co_uring {
 
@@ -42,20 +45,19 @@ public:
 
     class send_awaiter {
     public:
-        send_awaiter(std::uint32_t raw_fd, const std::uint8_t* buf, std::size_t size) noexcept;
-        
-        [[nodiscard]] bool await_ready() const noexcept;
+        send_awaiter(std::uint32_t raw_fd, std::span<const std::uint8_t> buf) noexcept;
+
+        [[nodiscard]] bool await_ready() const noexcept { return false; }
         void await_suspend(std::coroutine_handle<> coroutine) noexcept;
-        [[nodiscard]] int await_resume() const noexcept;
+        [[nodiscard]] std::expected<size_t, std::errc> await_resume() const noexcept;
 
     private:
         mutable sqe_data sqe_data_;
         const std::uint32_t raw_fd_;
-        const std::uint8_t* buffer_;
-        const std::size_t buffer_size_;
+        const std::span<const std::uint8_t> buf_;
     };
 
-    [[nodiscard]] auto send(const std::uint8_t* buf, std::size_t size) const noexcept -> task<int>;
+    [[nodiscard]] send_awaiter send(std::span<const std::uint8_t> buf) const noexcept;
 };
 
 class socket_server : public file {
