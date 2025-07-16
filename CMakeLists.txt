@@ -30,9 +30,7 @@ set(IO_SOURCES
 )
 
 set(SESSION_SOURCES
-    session/session.cpp
-    session/service.cpp
-    session/packet_handler.cpp
+    session/session_manager.cpp
 )
 
 set(SERVER_SOURCES
@@ -87,8 +85,7 @@ if(CLANG_TIDY_EXE)
         ${CMAKE_SOURCE_DIR}/io/buffer_ring.cpp
         ${CMAKE_SOURCE_DIR}/io/io_uring.cpp
         ${CMAKE_SOURCE_DIR}/io/socket.cpp
-        ${CMAKE_SOURCE_DIR}/session/session.cpp
-        ${CMAKE_SOURCE_DIR}/session/service.cpp
+        ${CMAKE_SOURCE_DIR}/session/session_manager.cpp
         ${CMAKE_SOURCE_DIR}/server/server.cpp
         ${CMAKE_SOURCE_DIR}/main.cpp
         COMMENT "Running clang-tidy..."

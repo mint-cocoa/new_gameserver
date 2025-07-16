@@ -6,7 +6,7 @@
 #include <coroutine>
 #include <thread>
 #include "../coroutine/include/task.h"
-#include "../session/include/service.h"
+#include "../session/include/session_manager.h"
 
 namespace co_uring
 {
@@ -85,11 +85,9 @@ namespace co_uring
             auto client = co_await socket_server_->accept();
             if (client)
             {
-                LOG_INFO("🔗 New client connected, creating session and spawning handler");
-                auto session = std::make_shared<GameSession>(std::unique_ptr<socket_client>(client));
-                session->OnConnected();
-                spawn(GameSessionHandler::handle_client(session));
-                LOG_DEBUG("🌱 Client handler coroutine spawned successfully");
+                LOG_INFO("🔗 New client connected, spawning session handler");
+                spawn(HandleClientSession(std::unique_ptr<socket_client>(client)));
+                LOG_DEBUG("🌱 Client session handler coroutine spawned successfully");
             }
             else
             {

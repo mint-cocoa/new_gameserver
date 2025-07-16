@@ -7,6 +7,7 @@
 #include <memory>
 #include <vector>
 #include <cerrno>
+#include <span>
 
 namespace co_uring
 {

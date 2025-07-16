@@ -1,0 +1,39 @@
+# Build directories
+build/
+cmake-build-*/
+
+# IDE files
+.vscode/settings.json
+.vs/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log files
+logs/*.log
+*.log
+
+# Object files
+*.o
+*.a
+*.so
+*.dylib
+
+# Executables
+*.exe
+*.out
+simple_client
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp 

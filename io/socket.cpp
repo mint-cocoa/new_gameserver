@@ -68,26 +68,18 @@ namespace co_uring
         return recv_awaiter{get_raw_fd()};
     }
 
-    socket_client::send_awaiter::send_awaiter(std::uint32_t raw_fd,
-                                              const std::uint8_t *buf,
-                                              std::size_t size) noexcept
-        : raw_fd_(raw_fd), buffer_(buf), buffer_size_(size)
+    socket_client::send_awaiter::send_awaiter(std::uint32_t raw_fd, std::span<const std::uint8_t> buf) noexcept
+        : raw_fd_(raw_fd), buf_(buf)
     {
-        LOG_DEBUG("📡 send_awaiter created for fd: {}, size: {}", raw_fd, size);
-    }
-
-    bool socket_client::send_awaiter::await_ready() const noexcept
-    {
-        LOG_DEBUG("❓ send_awaiter::await_ready - fd: {} (always false)", raw_fd_);
-        return false;
+        LOG_DEBUG("📡 send_awaiter created for fd: {}, size: {}", raw_fd, buf.size());
     }
 
     void socket_client::send_awaiter::await_suspend(std::coroutine_handle<> coroutine) noexcept
     {
         LOG_DEBUG("⏸️ send_awaiter::await_suspend - fd: {}, coroutine: 0x{:016x}, size: {}",
-                  raw_fd_, reinterpret_cast<uintptr_t>(coroutine.address()), buffer_size_);
+                  raw_fd_, reinterpret_cast<uintptr_t>(coroutine.address()), buf_.size());
         sqe_data_.coroutine = coroutine.address();
-        IoUring::getInstance().submitSendRequest(&sqe_data_, raw_fd_, buffer_, buffer_size_);
+        IoUring::getInstance().submitSendRequest(&sqe_data_, raw_fd_, buf_);
         LOG_DEBUG("📤 send_awaiter submitted SQE for fd: {}", raw_fd_);
     }
 
@@ -107,24 +99,10 @@ namespace co_uring
         return sqe_data_.cqe_res;
     }
 
-    socket_client::send_awaiter::send_awaiter(std::uint32_t raw_fd, std::span<const std::uint8_t> buf) noexcept
-    : raw_fd_{raw_fd}, buf_{buf} {}
-
-void socket_client::send_awaiter::await_suspend(std::coroutine_handle<> coroutine) noexcept {
-    sqe_data_.coroutine = coroutine.address();
-    IoUring::getInstance().submitSendRequest(&sqe_data_, raw_fd_, buf_);
-}
-
-std::expected<size_t, std::errc> socket_client::send_awaiter::await_resume() const noexcept {
-    if (sqe_data_.cqe_res < 0) {
-        return std::unexpected(static_cast<std::errc>(-sqe_data_.cqe_res));
+    socket_client::send_awaiter socket_client::send(std::span<const std::uint8_t> buf) const noexcept
+    {
+        return send_awaiter{get_raw_fd(), buf};
     }
-    return static_cast<size_t>(sqe_data_.cqe_res);
-}
-
-socket_client::send_awaiter socket_client::send(std::span<const std::uint8_t> buf) const noexcept {
-    return {raw_fd_, buf};
-}
 
     // socket_server implementation
 

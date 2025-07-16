@@ -114,7 +114,9 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "format": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "codecvt": "cpp",
+        "fstream": "cpp"
     },
     // 에디터 설정
     "editor.formatOnSave": true,

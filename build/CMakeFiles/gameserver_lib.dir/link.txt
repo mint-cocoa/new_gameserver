@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgameserver_lib.a CMakeFiles/gameserver_lib.dir/io/buffer_ring.cpp.o CMakeFiles/gameserver_lib.dir/io/io_uring.cpp.o CMakeFiles/gameserver_lib.dir/io/socket.cpp.o CMakeFiles/gameserver_lib.dir/io/logger.cpp.o CMakeFiles/gameserver_lib.dir/session/session.cpp.o CMakeFiles/gameserver_lib.dir/session/service.cpp.o CMakeFiles/gameserver_lib.dir/server/server.cpp.o
-/usr/bin/ranlib libgameserver_lib.a
